@@ -9,6 +9,11 @@ export default () => {
         "destination": "gabrielvanderlei",
         "content": "Oops"
     });
+    
+    conversations.push({
+        "destination": "gabrielvanderlei",
+        "content": "Oops"
+    });
 
     setConversation(conversations);
 
@@ -21,7 +26,10 @@ export default () => {
 
     return (
         <div>
-            {conversations.forEach((item, key) => mountConversations(item))}
+            <HeaderMenu />
+            <div>
+                {conversations.forEach((item, key) => mountConversations(item))}
+            </div>
         </div>
     );
 }
