@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import HeaderMenu from "../components/HeaderMenu";
 
 export default () => {
 
-    let [conversations, setConversation] = useState({});
-    let conversations = [];
+    let [conversations, setConversation] = useState([]);
+    let conversationsList = [];
 
-    conversations.push({
-        "destination": "gabrielvanderlei",
-        "content": "Oops"
-    });
-    
-    conversations.push({
-        "destination": "gabrielvanderlei",
-        "content": "Oops"
-    });
+    useEffect(() => {
+        conversationsList.push({
+            "destination": "gabrielvanderlei",
+            "content": "Oops"
+        });
+        
+        conversationsList.push({
+            "destination": "gabrielvanderlei",
+            "content": "Oops"
+        });
 
-    setConversation(conversations);
+        setConversation(conversationsList);
+    });
 
     let mountConversations = ({ destination, content }) => (
         <div>
@@ -28,7 +31,7 @@ export default () => {
         <div>
             <HeaderMenu />
             <div>
-                {conversations.forEach((item, key) => mountConversations(item))}
+                {conversations.map((item, key) => mountConversations(item))}
             </div>
         </div>
     );
