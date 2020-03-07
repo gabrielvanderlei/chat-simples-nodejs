@@ -1,4 +1,4 @@
-# Chat Simples com React Native
+# Chat Simples com React, React Native e AdonisJS
 Sistema de chat simples com React Native, React e AdonisJS.
 
 ## Mobile
