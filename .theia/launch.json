@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+        "name": "Debug",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}/backend",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+            "run-script",
+            "debug"
+        ],
+        "port": 9229
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Tests",
+      "program": "${workspaceFolder}/ace.js",
+      "args": [
+        "test"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

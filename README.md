@@ -1,5 +1,6 @@
 # Chat Simples com React, React Native e AdonisJS
 Sistema de chat simples com React Native, React e AdonisJS.
+Sistema de jwt utilizando o boilerplate de https://github.com/jsnomad/adonis-jwt-boilerplate
 
 ## Mobile
 - [ ] Usuário
